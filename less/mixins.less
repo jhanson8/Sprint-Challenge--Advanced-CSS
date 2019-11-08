@@ -1,1 +1,29 @@
 // Mixins Here
+.custom-button(@bg-color, @size, @font-color){
+  display: block;
+  background-color: @bg-color;
+  margin: 0;
+  cursor: pointer;
+  width: @size;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: @font-color;
+
+  &:hover{
+    background-color: @sea-shell;
+    color:@river-bend;
+  }
+
+}
+
+.headerImageStyle(){
+  border-radius: 10px;
+  width:100%;
+}
+
+.spaceImagesStyle(){
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
